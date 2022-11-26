@@ -1,0 +1,52 @@
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <Style>
+        body{
+            background-color: black;
+            color: antiquewhite;
+        }
+    </Style>
+    <title> Exercicio 05</title>
+</head>
+
+<body>
+    <p>É AGORA TEM QUE PAGAR</p>
+    <script>
+
+        let valor;
+        let condi;
+        let totalj;
+        let total;
+        alert("Pagamento a Prazo tem Juros de 10% em 3X ou 20% em 5X");
+        valor = parseFloat(prompt('Qual o valor a pagar : R$ '));
+        quantas = parseInt(prompt('Qual prazo 3x ou 5x'));
+        switch (quantas) {
+
+            case 3:
+                totalj = (valor * 10) / 100
+                total = totalj + valor
+                parcelas = total / 3
+                break;
+
+            case 5:
+                totalj = (valor * 20) / 100
+                total = totalj + valor
+                parcelas = total / 5
+                break;
+
+            default:
+        }
+       
+        document.write('Valor total a pagar ', total.toFixed(2));
+        document.write('<br>');
+        document.write('Parcelar em ', quantas, 'x no valor de ', parcelas.toFixed(2));
+
+    </script>
+</body>
+
+</html>
